@@ -1,0 +1,22 @@
+/* Cascade style sheet file  */
+
+img {
+	width: 300px;
+}
+
+.link {
+	background-color: black;
+	color: aliceblue;
+}
+
+.purple-black {
+	background-color: purple;
+}
+
+span {
+	font-style: italic;
+}
+
+span:hover {
+	background-color: blue;
+}
