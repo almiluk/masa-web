@@ -17,5 +17,5 @@ jobs:
       run: sudo apt install lftp
     - name: Deploy
       run: |
-        cd ${GITHUB_WORKSPACE}
+        cd ${GITHUB_WORKSPACE}/masa-web
         lftp -e "set ssl:check-hostname no; mirror -R --only-newer -F ../../tasks/*; bye;" -u $LFTP_USER,$LFTP_PASSWORD $LFTP_HOST
