@@ -9,9 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      - LFTP_USER:  ${{ secrets.LFTP_USER }}
-      - LFTP_PASSWORD: ${{ secrets.LFTP_PASSWORD }}
-      - LFTP_HOST: ${{ secrets.LFTP_HOST }}
+      LFTP_USER:  ${{ secrets.LFTP_USER }}
+      LFTP_PASSWORD: ${{ secrets.LFTP_PASSWORD }}
+      LFTP_HOST: ${{ secrets.LFTP_HOST }}
     steps:
     - name: Deploy
       run: sh deploy.sh
