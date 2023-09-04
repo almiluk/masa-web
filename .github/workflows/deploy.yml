@@ -14,4 +14,5 @@ jobs:
       LFTP_HOST: ${{ secrets.LFTP_HOST }}
     steps:
     - name: Deploy
-      run: pwd
+      working-directory: ./.github/workflow
+      run: sh deploy.sh
