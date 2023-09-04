@@ -17,4 +17,4 @@ jobs:
       run: sudo apt install lftp
     - uses: actions/checkout@v2
     - name: Deploy
-      run: sh .github.com/workflows/deploy.sh
+      run: sh .github/workflows/deploy.sh
