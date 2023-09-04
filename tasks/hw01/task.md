@@ -1,4 +1,4 @@
-- [ ] Create at the hosting tigris/your-name/hw01 dir
+- [X] Create at the hosting tigris/your-name/hw01 dir
 
 - [X] Create html page.
    - [X] give this page a title (in the `<head>`) with your name
@@ -49,7 +49,7 @@
 
    - [X] Make all the `<span>`s to change on :hover
 
-- [ ] Create html pages like the pages in the pictures. Give them other names (not index.html)
+- [X] Create html pages like the pages in the pictures. Give them other names (not index.html)
 
     - [X] html_practice_exercise_1.jpg
     and
