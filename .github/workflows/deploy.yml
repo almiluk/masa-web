@@ -1,0 +1,20 @@
+name: Deploy to FastComet
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      LFTP_USER:  ${{ secrets.LFTP_USER }}
+      LFTP_PASSWORD: ${{ secrets.LFTP_PASSWORD }}
+      LFTP_HOST: ${{ secrets.LFTP_HOST }}
+    steps:
+    - name: Install lftp
+      run: sudo apt install lftp
+    - uses: actions/checkout@v2
+    - name: Deploy
+      run: sh .github/workflows/deploy.sh
