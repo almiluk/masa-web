@@ -17,6 +17,4 @@ jobs:
       run: sudo apt install lftp
     - uses: actions/checkout@v2
     - name: Deploy
-      run: |
-        find tasks
-        lftp -e "set ssl:check-hostname no; mirror -R --only-newer -F tasks/*; bye;" -u $LFTP_USER,$LFTP_PASSWORD $LFTP_HOST
+      run: lftp -e "set ssl:check-hostname no; mirror -R --only-newer -F tasks/*; bye;" -u $LFTP_USER,$LFTP_PASSWORD $LFTP_HOST
