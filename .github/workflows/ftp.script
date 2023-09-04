@@ -1,0 +1,4 @@
+open -u almiluk-git@tigris.scienceart.co.il,dGmW,5LbZxrw -p port ftp.scienceart.co.il 
+set ssl:check-hostname no
+mirror -R --only-newer -F tasks/*
+bye

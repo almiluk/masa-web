@@ -1,0 +1,15 @@
+name: Deploy to FastComet
+
+on:
+  push:
+    branches:
+      - add-actions
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      - LFTP_USER:  ${{ secrets.LFTP_USER }}
+      - LFTP_PASSWORD: ${{ secrets.LFTP_PASSWORD }}
+      - LFTP_HOST: ${{ secrets.LFTP_HOST }}
+    run: sh deploy.sh
