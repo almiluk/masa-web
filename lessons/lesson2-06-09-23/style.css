@@ -1,0 +1,18 @@
+.blue-sans{
+	color: darkslateblue;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#football{
+	font-style: italic;
+	background:chartreuse;
+	font-family: monospace;
+}
+
+#football:hover{
+	transform: scale(1.1);
+}
+
+.monospace{
+	font-family: monospace;
+}
