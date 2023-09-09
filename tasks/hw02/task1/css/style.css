@@ -1,0 +1,57 @@
+.big-marg {
+	margin: 10% 5%;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.no-marg {
+	margin: 0;
+}
+
+p {
+	text-align: center;
+	margin: 5%;
+}
+
+.pink-text {
+	color: pink;
+}
+
+.inner-link {
+	color: blue;
+	border-color: red;
+	border-style: solid none solid none;
+}
+
+.green-background {
+	background-color: green;
+}
+
+.bordered-h2 {
+	border-width: 10px 5px 1px 7px;
+	border-style: dashed dotted solid double;
+}
+
+body {
+	background-color: brown;
+}
+
+h2 {
+	text-align: right;
+}
+
+.outer-div {
+	background-color: aqua;
+	height: 600px;
+	width: 600px;
+	font-family: sans-serif;
+	margin: auto;
+}
+
+.div-container {
+	margin: auto;
+	width: 70%;
+	background-color: blue;
+}
