@@ -1,0 +1,20 @@
+name: Deploy to FastComet
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Here is the deployment action
+      - name: Upload from output to a remote server via FTP
+        uses: modern-dev/ftp-mirror@v2
+        with:
+          server: ${{ secrets.LFTP_HOST }}
+          user: ${{ secrets.LFTP_USER }}
+          password: ${{ secrets.LFTP_PASSWORD }}
+          local_dir: "./tasks"
+          remote_dir: "./"
+  
