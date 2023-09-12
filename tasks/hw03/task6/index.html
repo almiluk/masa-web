@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hw3.6</title>
+</head>
+<body>
+	<script>
+		let countTomatoLovers = 10;
+   		let countTomatoHaters = 3;
+
+		function main() {
+
+			showTomatoLoversHaters()
+
+			const anw = prompt("Name some vegetable")
+
+			if (anw === "tomato")
+				countTomatoLovers++
+			else if (anw != "" && anw != undefined)
+				countTomatoHaters++
+
+			showTomatoLoversHaters()
+		}
+
+		function showTomatoLoversHaters() {
+			console.log(`We have got ${countTomatoLovers} tomato lovers and ${countTomatoHaters} tomato haters`)
+		}
+
+		main()
+	</script>
+</body>
+</html>

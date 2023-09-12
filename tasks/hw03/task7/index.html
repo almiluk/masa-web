@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hw3.7</title>
+</head>
+<body>
+	<script>
+		const yesVariations = ["yes", "yeah"]
+		const noVariations = ["no", "naah"]
+
+		const name = prompt("What is you name?")
+
+		const brushHair = prompt("Do you brush your hair?")?.toLowerCase()
+
+		if (yesVariations.includes(brushHair)) {
+			console.log(`Well done, ${name}! :)`)
+		} else if (noVariations.includes(brushHair)) {
+			console.log(`${name}, your hairdresser is crying! :(`)
+		} else {
+			const hasHair = prompt(`${name}, do you have hair at all?`)?.toLocaleLowerCase()
+
+			if (yesVariations.includes(hasHair)) {
+				console.log("yes")
+			} else if (noVariations.includes(hasHair)) {
+				console.log("no")
+			}
+		}
+
+		console.log("Regards to your hairdresser!")
+
+	</script>
+</body>
+</html>

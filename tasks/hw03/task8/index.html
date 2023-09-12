@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hw3.8</title>
+</head>
+<body>
+	<script>
+		function main() {
+			const num1 = parseFloat(prompt("Enter num1"))
+			const num2 = parseFloat(prompt("Enter num2"))
+			const num3 = parseFloat(prompt("Enter num3"))
+
+			let ok = true
+
+			if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+				alert("Something but not only numbers was entered.")
+				return
+			}
+
+			if (num1 === num2) {
+				alert("The first and the second numbers are equal.\nWrong input!")
+				ok = false
+			}
+
+			if (num3 === num1 || num3 === num2) {
+				alert("The 3rd number is equal to the 1st or to the 2nd.\nWrong input!")
+				ok = false
+			}
+
+			if (ok)
+				console.log(Math.max(num1, num2, num3))
+		}
+
+		main()
+	</script>
+</body>
+</html>
